@@ -6,3 +6,4 @@ gatsby-browser.js
 utils.js
 default-options.js
 !src/**/*
+.idea

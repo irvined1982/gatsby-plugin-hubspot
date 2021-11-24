@@ -22,7 +22,7 @@ exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
       key='gatsby-plugin-hubspot'
       async
       defer
-      src={`//js.hs-scripts.com/${options.trackingCode}.js`}
+      src={`https://js.hs-scripts.com/${options.trackingCode}.js`}
     />,
     <script
       dangerouslySetInnerHTML={{
