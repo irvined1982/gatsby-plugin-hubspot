@@ -17,7 +17,7 @@ exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
 
   return setPostBodyComponents([
     <script
-      type='text/javascript'
+      type="text/partytown"
       id='hs-script-loader'
       key='gatsby-plugin-hubspot'
       async
