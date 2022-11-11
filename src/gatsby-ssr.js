@@ -1,6 +1,7 @@
 import React from 'react'
 import { isDefined, oneline } from './utils'
 import defaultOptions from './default-options'
+import { Script } from "gatsby"
 
 exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
   const options = {
@@ -16,7 +17,7 @@ exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
   }
 
   return setPostBodyComponents([
-    <script
+    <Script
       type='text/javascript'
       id='hs-script-loader'
       key='gatsby-plugin-hubspot'
@@ -24,7 +25,7 @@ exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
       defer
       src={`https://js.hs-scripts.com/${options.trackingCode}.js`}
     />,
-    <script
+    <Script
       dangerouslySetInnerHTML={{
         __html: oneline`
           var _hsq = window._hsq = window._hsq || [];
